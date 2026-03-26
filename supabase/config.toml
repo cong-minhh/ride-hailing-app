@@ -1,0 +1,33 @@
+
+[functions.calculate-fare]
+enabled = true
+verify_jwt = true
+import_map = "./functions/calculate-fare/deno.json"
+# Uncomment to specify a custom file path to the entrypoint.
+# Supported file extensions are: .ts, .js, .mjs, .jsx, .tsx
+entrypoint = "./functions/calculate-fare/index.ts"
+# Specifies static files to be bundled with the function. Supports glob patterns.
+# For example, if you want to serve static HTML pages in your function:
+# static_files = [ "./functions/calculate-fare/*.html" ]
+
+[functions.find-nearest-driver]
+enabled = true
+verify_jwt = true
+import_map = "./functions/find-nearest-driver/deno.json"
+# Uncomment to specify a custom file path to the entrypoint.
+# Supported file extensions are: .ts, .js, .mjs, .jsx, .tsx
+entrypoint = "./functions/find-nearest-driver/index.ts"
+# Specifies static files to be bundled with the function. Supports glob patterns.
+# For example, if you want to serve static HTML pages in your function:
+# static_files = [ "./functions/find-nearest-driver/*.html" ]
+
+[functions.process-wallet]
+enabled = true
+verify_jwt = true
+import_map = "./functions/process-wallet/deno.json"
+# Uncomment to specify a custom file path to the entrypoint.
+# Supported file extensions are: .ts, .js, .mjs, .jsx, .tsx
+entrypoint = "./functions/process-wallet/index.ts"
+# Specifies static files to be bundled with the function. Supports glob patterns.
+# For example, if you want to serve static HTML pages in your function:
+# static_files = [ "./functions/process-wallet/*.html" ]
